@@ -20,3 +20,9 @@ use App\Http\Controllers\UserController;
 
 
 Route::get('/', [UserController::class,'index']);
+Route::post('/save-registration-detail', [UserController::class,'Registration']);
+Route::post('/check-user-validation', [UserController::class,'Login']);
+Route::get('/logout', [UserController::class,'Logout']);
+
+
+
